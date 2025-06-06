@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fae1dd;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.superior{
+    position: absolute;
+    border-left: 260px solid transparent;
+    border-right: 260px solid transparent;
+    border-top: 220px solid #f08080;
+    border-bottom: 220px solid transparent;
+    border-radius: 10px;
+    transition:  transform .75s;
+}
+
+.mensaje{
+    position: absolute;
+    padding: 1.5rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+    background-color: #eae2b7;
+    width: 520px;
+    height: 440px;
+    z-index: 0;
+    transition: transform 0.75s ease-in-out;
+}
+
+.mensaje:before{
+    content: '';
+    border-style: dotted;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+}
+
+.mensaje p{
+    position: absolute;
+    top: -10px;
+    font-size: 1.2rem;
+}
+
+.carta{
+    border-left: 260px solid #f8ad9d;
+    border-right: 260px solid #f4978a;
+    border-top: 220px solid transparent;
+    border-bottom: 220px solid #e59c93;
+    border-radius: 10px;
+}
+
+.sorpresa{
+    margin-top: -10px;
+}
